@@ -7,10 +7,21 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/movebtn"
+        android:id="@+id/move_viewpager_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="move"
+        android:text="move_viewpager_btn"
+        app:layout_constraintBottom_toTopOf="@id/move_listview_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/move_listview_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="move_listview_btn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

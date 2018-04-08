@@ -13,12 +13,21 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button movebtn = (Button)findViewById(R.id.movebtn);
+        Button mMoveViewPagerbtn = (Button)findViewById(R.id.move_viewpager_btn);
+        Button mMoveListViewbtn = (Button)findViewById(R.id.move_listview_btn);
 
-        movebtn.setOnClickListener(new View.OnClickListener() {
+        mMoveViewPagerbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, SwipeView.class);
+                startActivity(intent);
+            }
+        });
+
+        mMoveListViewbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, TestActivity.class);
                 startActivity(intent);
             }
         });
