@@ -29,7 +29,10 @@ public class FragmentActivity extends AppCompatActivity  implements FragmentRecy
 
 
         mViewPager = (ViewPager) findViewById(R.id.fragment_viewpager);
-        mViewPager.setAdapter(mFragmentPagerCustomAdapter);
+
+//        layoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
+
+//        mViewPager.setAdapter(new FragmentRecyclerViewAdapter(this, mViewPager);
 
         mViewPager.setOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener() {
             @Override
@@ -38,7 +41,7 @@ public class FragmentActivity extends AppCompatActivity  implements FragmentRecy
             }
         });
 
-        mFragmentRecyclerViewAdapter = new FragmentRecyclerViewAdapter();
+//        mFragmentRecyclerViewAdapter = new FragmentRecyclerViewAdapter();
 
 //        recyclerView = (RecyclerView)findViewById(R.id.fragment_widget_recyclerview);
 //        recyclerView.setHasFixedSize(true);

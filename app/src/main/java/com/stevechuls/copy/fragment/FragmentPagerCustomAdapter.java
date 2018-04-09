@@ -26,8 +26,8 @@ public class FragmentPagerCustomAdapter extends FragmentPagerAdapter {
         switch (position)
         {
             case 0:
-//                mFragmentRecyclerViewMenu = new FragmentRecyclerViewMenu();
-                return FragmentRecyclerViewMenu.getInstance();
+                mFragmentRecyclerViewMenu = new FragmentRecyclerViewMenu();
+                return mFragmentRecyclerViewMenu;
 
             case 1:
                 mFragmentRecyclerViewMenu = new FragmentRecyclerViewMenu();
