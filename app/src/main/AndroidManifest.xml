@@ -19,11 +19,12 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" />
-        <activity
-            android:name=".SwipeView"
-            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
-        <activity android:name=".TestActivity"></activity>
+            android:theme="@style/AppTheme" />
+        <!--<activity-->
+            <!--android:name=".SwipeView"-->
+            <!--android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />-->
+        <!--<activity android:name=".TestActivity" />-->
+        <activity android:name=".fragment.FragmentActivity"></activity>
     </application>
 
 </manifest>
